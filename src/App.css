@@ -1,0 +1,20 @@
+body > #root {
+  background-color: #E7E1DD;
+  min-height: 100vh;
+  font-family: Rubik;
+}
+
+:root {
+  --color-white: #FFF;
+  --color-black: #000;
+  --color-green: #209F8E;
+  --color-border-green: #2cd45e;
+  --color-light-green: #E9F5F4;
+  --color-deep-blue:#342B67;
+  --color-blue: #44368E;
+  --color-light-blue: #F8F5FD;
+  --color-yellow: #F6C330;
+  --color-light-yellow: #FEF9EA;
+  --color-grey:#707683;
+  --color-light-grey:#A6ACBE;
+}
