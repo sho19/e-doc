@@ -1,0 +1,33 @@
+.authentication-parent-contatiner{
+    background-color: var(--color-white);
+    min-height: 100vh;
+}
+
+.authentication-logoSection {
+    padding: 65px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authentication-logoImg {
+    height: 50px;
+    padding-right: 10px;
+}
+
+.authentication-headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.authentication-header-desc {
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+
+.authentication-header {
+    font-weight: 600;
+    font-size: 32px;
+}

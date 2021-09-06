@@ -1,0 +1,9 @@
+input[type=email] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-block-start: 5px;
+    margin-block-end: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}

@@ -1,8 +1,12 @@
 import React from 'react';
 import { LogoIcon, HeartConditionIcon, RespiratoryIllnessIcon, KidneyDiseaseIcon, LiverDiseaseIcon } from '../Svg/index';
 import "./landingPage.css"
+import Button from '../Button';
+import { useHistory } from "react-router";
 
-const landingPage = (props) => {
+
+const LandingPage = (props) => {
+    const history = useHistory();
 
     const healthIcons = [
         { icon: HeartConditionIcon, alt: 'HeartConditionIcon', helpTextHeader: 'Heart Condition', helpTextDesc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed' },
@@ -25,7 +29,15 @@ const landingPage = (props) => {
                 <img src={LogoIcon} alt={"logo"} />
                 <div className={'landingPage-headerContainer'}>
                     <div className={'landingPage-header-desc'}>Phyiscians portal</div>
-                    <div className={'landingPage-header'}>EDoc</div>
+                    <div className={'landingPage-header'}>eDoc</div>
+                    <Button onPress={e => {
+                        history.push({
+                            pathname: "/authentication",
+                            state: {
+                                authentication: null
+                            }
+                        })
+                    }}>Sign up now!</Button>
                 </div>
             </div>
 
@@ -55,8 +67,8 @@ const landingPage = (props) => {
                 </div>
             </div>
             <div className={'landing-page-disclaimer'}>You are about to reclaim control of your physician identity & credentials. </div>
-        </div>
+        </div >
     );
 };
 
-export default landingPage;
+export default LandingPage;
